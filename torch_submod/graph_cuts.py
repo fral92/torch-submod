@@ -3,7 +3,8 @@ from __future__ import division, print_function
 
 from pathos import multiprocessing
 # Must import these first, gomp issues with pytorch.
-from prox_tv import tv1w_2d, tv1_2d, tv1w_1d, tv1_1d
+from prox_tv import tv1_2d, tv1w_1d, tv1_1d
+from torch_proxtv import tv1w_2d
 
 import numpy as np
 from sklearn.isotonic import isotonic_regression as isotonic
